@@ -29,7 +29,12 @@ class App extends Component {
     return (
       <div className="App">
         <Navigation />
-        <Astronauts astronauts={this.state.astronauts} />
+        <div className="wrapper">
+          <div className="title">Who is in space</div>
+          <div className="container">
+            <Astronauts astronauts={this.state.astronauts} />
+          </div>
+        </div>
       </div>
     );
   }
